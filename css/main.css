@@ -15,12 +15,21 @@ html{
     --main-bg-color: #F2C886;
     --second-bg-color: #FFE8C5;
     --main-txt-color: #000000;
-    --second-txt-color: #3b3939;
-    --main-border-color: #acacac;
+    --main-button-color: #A91A1A;
 }
 body{
   width: 100vw;
   background-color: var(--main-bg-color);
+}
+body::-webkit-scrollbar {
+  width: 1vw;               
+}
+body::-webkit-scrollbar-track {
+  background: var(--second-bg-color);        
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-bg-color);    
+  border: 1px solid black;
 }
 /* Open Header */
 
@@ -173,33 +182,179 @@ h3 {
 /* Open section car-block */
 
 .car-block{
-  display: flex;
-  flex-direction: row;
-  margin-top: 100px;
+  margin-top: 150px;
+  margin-bottom: 250px;
 }
 .background-car{
   display: flex;
   background-color: var(--second-bg-color);
-  width: 100%;
+  width: 1485px;
   height: 550px;
   z-index: 1;
 }
-.car-block img{
+.car-block .car{
   position: absolute;
   z-index: 2;
   width: 615px;
+  height: 735px;
+  margin-top: -89px;
+  margin-left: 46px;
 }
 .background-car div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1180px;
   height: 550px;
   float: right;
+  z-index: 1;
+  left: 150px;
+}
+.background-car div p{
+  width: 560px;
+  font-size: 32px;
+  float: right;
+}
+.background-car div h1{
+  width: 560px;
+  font-size: 64px;
+  float: right;
+  margin-bottom: 41px;
 }
 .background-car button{
   position: relative;
+  width: 190px;
   height: 70px;
+  background-color: var(--main-button-color);
+  border: none;
+  left: 200px;
+  top: 20px;
   z-index: 2;
+}
+.background-car button:hover{
+  cursor: pointer;
+}
+.angle{
+  position: relative;
+  z-index: 1;
+  float: right;
+  left: 49px;
+  bottom: 49px;
+  width: 233px;
 }
 
 /* Close section car-block */
+
+
+/* Open section vinil */
+
+.vinil{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+.back-vinil{
+  width: 1400px;
+  height: 700px;
+  background-color: var(--second-bg-color);
+}
+.back-vinil div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-top: 70px;
+}
+.back-vinil div h1{
+  width: 620px;
+  font-size: 64px;
+  margin-bottom: 60px;
+}
+.back-vinil div p{
+  width: 620px;
+  font-size: 36px;
+  margin-bottom: 105px;
+}
+.back-vinil div button{
+  width: 190px;
+  height: 70px;
+  background-color: var(--main-button-color);
+  border: none;
+}
+.back-vinil div button:hover{
+  cursor: pointer;
+}
+.back-vinil img{
+  position: relative;
+  width: 550px;
+  height: 717px;
+  float: right;
+  right: 100px;
+  bottom: 667px;
+  z-index: 2;
+}
+
+/* Close section vinil */
+
+
+/* Open section question */
+
+.question{
+  width: 100vw;
+  height: 491px;
+  background-color: var(--second-bg-color);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 110px;
+}
+.question h1{
+  font-size: 96px;
+  margin-top: 65px;
+}
+.question p{
+  font-size: 48px;
+  margin-top: 30px;
+}
+.question form{
+  margin-top: 70px;
+}
+input[type=text]{
+  background: transparent;
+  outline: none;
+  border: 2px solid #000001;
+  padding-top: 5px;
+  padding-left: 22px;
+  height: 70px;
+  font-size: 36px;
+}
+input::placeholder{
+  color: black;
+  font-size: 36px;
+}
+.first-input{
+  width: 490px;
+  margin-right: 30px;
+}
+.second-input{
+  width: 750px;
+  margin-right: 30px;
+}
+input[type=submit]{
+  width: 230px;
+  height: 70px;
+  background-color: var(--main-button-color);
+  border: 2px solid black;
+  font-size: 36px;
+  color: var(--second-bg-color);
+  text-align: center;
+}
+input[type=submit]:hover{
+  cursor: pointer;
+}
+
+/* Close section question */
 
 
 /* Open footer */
@@ -209,13 +364,11 @@ footer{
 }
 .div-footer{
   background-color: var(--second-bg-color);
-  height: 30vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1.2fr;
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 0;
   border: 1px solid black;
-  margin-top: 100px;
   margin-bottom: 50px;
 }
 .footer-li-1{
@@ -247,7 +400,7 @@ footer{
   grid-column-end: 5  ;
 }
 .footer-li-4 img{
-  width: 10vw;
+  width: 231px;
 }
 .footer-li-5{
     border: 1px solid black;
@@ -295,11 +448,263 @@ footer{
   padding: 0 2vw;
 }
 .footer-li-11 p{
-  font-size: 0.8vw;
+  font-size: 24px;
 }
 
 /* Close footer */
 
-@media screen and (min-width: 1200px) and (max-width: 1441px){
+@media screen and (min-width: 1290px) and (max-width: 1590px){
+  .container{
+    width: 1290px;
+  }
+  .offer-grid{
+    display: grid;
+    grid-template-columns: 110px 535px 645px;
+    grid-template-rows: 475px 164px;
+    grid-gap: 0;
+    background-color: var(--second-bg-color);
+  }
+  .elem-offer-1 h1{
+    width: 550px;
+    font-size: 78px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .elem-offer-1 p{
+    width: 550px;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+  .elem-offer-3 p{
+    font-size: 28px;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* Open section car-block */
 
+.car-block{
+  margin-top: 150px;
+}
+.background-car{
+  display: flex;
+  background-color: var(--second-bg-color);
+  width: 1185px;
+  height: 550px;
+  z-index: 1;
+}
+.car-block .car{
+  position: absolute;
+  z-index: 2;
+  width: 503px;
+  height: 689px;
+  margin-top: -89px;
+  margin-left: 46px;
+}
+.background-car div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1180px;
+  height: 550px;
+  float: right;
+  z-index: 1;
+  left: 150px;
+}
+.background-car div p{
+  width: 560px;
+  font-size: 32px;
+  float: right;
+}
+.background-car div h1{
+  width: 560px;
+  font-size: 64px;
+  float: right;
+  margin-bottom: 41px;
+}
+.background-car button{
+  position: relative;
+  width: 190px;
+  height: 70px;
+  background-color: var(--main-button-color);
+  border: none;
+  left: 68px;
+  top: 20px;
+  z-index: 2;
+}
+.background-car button:hover{
+  cursor: pointer;
+}
+.angle{
+  position: relative;
+  z-index: 1;
+  left: 19px;
+  bottom: 49px;
+  width: 165px;
+}
+
+/* Close section car-block */
+
+
+.back-vinil img{
+  width: 483px;
+  height: 700px;
+  right: 40px;
+}
+.first-input{
+  width: 400px;
+}
+.second-input{
+  width: 600px;
+}
+input[type=submit]{
+  width: 190px;
+  height: 70px;
+}
+}
+@media screen and (min-width: 899px) and (max-width: 1290px){
+  .container{
+    width: 890px;
+  }
+  .offer-grid{
+    grid-template-columns: 80px 365px 445px;
+    grid-template-rows: 375px 114px;
+  }
+  .elem-offer-1 h1{
+    width: 415px;
+    font-size: 52px;
+    margin-top: 34px;
+    margin-bottom: 30px;
+  }
+  .elem-offer-1 p{
+    width: 415px;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+  .elem-offer-3 p{
+    font-size: 20px;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* Open section car-block */
+  .car-block{
+    margin-bottom: 120px;
+  }
+.background-car{
+  width: 890px;
+  height: 480px;
+  z-index: 1;
+}
+.car-block .car{
+  width: 372px;
+  height: 510px;
+  margin-top: -80px;
+  margin-left: 46px;
+}
+.background-car div{
+  width: 890px;
+  height: 480px;
+  left: 100px;
+}
+.background-car div p{
+  width: 440px;
+  font-size: 24px;
+}
+.background-car div h1{
+  width: 440px;
+  font-size: 48px;
+}
+.background-car button{
+  width: 130px;
+  height: 50px;
+  left: 0px;
+  top: 20px;
+}
+.background-car button svg{
+  width: 64px;
+}
+.angle{
+  position: relative;
+  z-index: 1;
+  left: 0px;
+  bottom: 89px;
+  width: 145px;
+}
+
+/* Close section car-block */
+.back-vinil{
+  width: 890px;
+  height: 456px;
+  background-color: var(--second-bg-color);
+}
+.back-vinil div h1{
+  width: 420px;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.back-vinil div p{
+  width: 420px;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.back-vinil div button{
+  width: 130px;
+  height: 50px;
+}
+.back-vinil div button svg{
+  width: 64px;
+}
+.back-vinil img{
+  width: 329px;
+  height: 477px;
+  right: 40px;
+  bottom: 487px;
+}
+input[type=submit]{
+  width: 190px;
+  height: 70px;
+}
+.question{
+  height: 440px;
+  margin-bottom: 70px;
+}
+.question h1{
+  font-size: 64px;
+  margin-top: 45px;
+}
+.question p{
+  font-size: 36px;
+  margin-top: 25px;
+}
+.question form{
+  margin-top: 50px;
+}
+input[type=text]{
+  padding-top: 5px;
+  padding-left: 22px;
+  height: 62px;
+}
+.first-input{
+  width: 720px;
+  margin-right: 0px;
+  margin-bottom: 35px;
+}
+.second-input{
+  width: 450px;
+  margin-right: 30px;
+}
+input[type=submit]{
+  position: relative;
+  width: 180px;
+  height: 62px;
+  font-size: 24px;
+  bottom: 6px;
+}
 }
