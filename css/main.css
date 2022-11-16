@@ -716,6 +716,7 @@ input[type=submit]{
    .offer-grid{
     grid-template-columns: 95px 220px 315px;
     grid-template-rows: 235px 114px;
+    margin-bottom: 50px;
   }
   .elem-offer-1 h1{
     width: 250px;
@@ -735,6 +736,12 @@ input[type=submit]{
     line-height: 1.5;
     width: 80%;
     margin: 0 auto;
+  }
+  .slider{
+    height: 80px;
+  }
+  h3{
+    line-height: 80px;
   }
     /* Open section car-block */
   .car-block{
@@ -822,7 +829,7 @@ input[type=submit]{
   margin-bottom: 70px;
 }
 .question h1{
-  font-size: 64px;
+  font-size: 60px;
   margin-top: 45px;
 }
 .question p{
