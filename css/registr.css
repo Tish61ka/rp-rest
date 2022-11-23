@@ -1,0 +1,237 @@
+
+:root{
+    --main-bg-color: #F2C886;
+    --second-bg-color: #FFE8C5;
+    --main-txt-color: #000000;
+    --main-button-color: #A91A1A;
+}
+/* Open section register */
+
+.registr{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.div-form{
+  display: none;
+  position: relative;
+  flex-direction: row;
+  margin: 0px auto;
+  margin-top: 100px;
+  max-width: 1316px;
+  height: 759px;
+  background-color: var(--main-bg-color);
+  border: 2px solid black;
+}
+.div-form > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.div-form div:nth-child(1) p{
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  font-size: 32px;
+  transform: rotate(90deg);
+}
+.div-form div:nth-child(1) img{
+  width: 550px;
+  height: 672px;
+}
+.div-form > div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+  margin-left: 45px;
+  margin-top: 50px;
+}
+.div-form div:nth-child(2) > div:first-child{
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 661px;
+}
+.div-form div:nth-child(2) > div:first-child > button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  border: 2px solid black;
+  width: 100%;
+  height: 90px;
+  font-size: 32px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  height: 571px;
+  background-color: var(--second-bg-color);
+  border: 2px solid black;
+  margin-top: -2px;
+  position: relative;
+}
+form > div:first-child{
+  display: flex;
+  align-items: center;
+  height: 110px;
+  border-bottom: 2px solid;
+}
+form div:first-child h3{
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 45px;
+}
+form div:nth-child(2){
+  width: 100%;
+  height: 90px;
+  background-color: var(--second-bg-color);
+  border-bottom: 2px solid black;
+}
+form input[type=email]{
+  height: 100px;
+  background-color: var(--second-bg-color);
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 32px;
+  padding-left: 50px;
+}
+form input[type=text]{
+  height: 100px;
+  background-color: var(--second-bg-color);
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 32px;
+  padding-left: 50px;
+}
+form input[type=password]{
+  height: 100px;
+  background-color: var(--second-bg-color);
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 32px;
+  padding-left: 50px;
+}
+form > div:last-child{
+  height: 184px;
+  border: none;
+}
+form > div:last-child div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 100px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+form > div:last-child button[type=submit]{
+  position: relative;
+  display: flex;
+  font-display: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 280px;
+  height: 65px;
+  background-color: var(--main-button-color);
+  color: var(--second-bg-color);
+  font-size: 32px;
+  border: none;
+  padding-right: 25px;
+  top: 20px;
+  right: 50px;
+  z-index: 2;
+}
+form > div:last-child button[type=submit] svg{
+  margin-right: 15px;
+}
+.div-form > div:nth-child(2) p{
+  transform: rotate(-270deg);
+  font-size: 32px;
+  height: 10px;
+  margin-top: 620px;
+}
+.div-form > button:last-child{
+  position: absolute;
+  background-color: var(--second-bg-color);
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  width: 78px;
+  height: 53px;
+  border: 2px solid black;
+}
+/* Close section registr */
+.div-form1{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin: 0px auto;
+  margin-top: 100px;
+  max-width: 1316px;
+  height: 759px;
+  background-color: var(--main-bg-color);
+  border: 2px solid black;
+}
+.div-form1 > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.div-form1 div:nth-child(1) p{
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  font-size: 32px;
+  transform: rotate(90deg);
+}
+.div-form1 div:nth-child(1) img{
+  width: 550px;
+  height: 672px;
+}
+.div-form1 > div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+  margin-left: 45px;
+  margin-top: 50px;
+}
+.div-form1 div:nth-child(2) > div:first-child{
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 661px;
+}
+.div-form1 div:nth-child(2) > div:first-child > button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  border: 2px solid black;
+  width: 100%;
+  height: 90px;
+  font-size: 32px;
+}
+.div-form1 > div:nth-child(2) p{
+  transform: rotate(-270deg);
+  font-size: 32px;
+  height: 10px;
+  margin-top: 620px;
+}
+.div-form1 > button:last-child{
+  position: absolute;
+  background-color: var(--second-bg-color);
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  width: 78px;
+  height: 53px;
+  border: 2px solid black;
+}
