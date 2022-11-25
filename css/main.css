@@ -165,7 +165,7 @@ body::-webkit-scrollbar-thumb {
   height: 140px;
   border: 1px solid black;
 }
-h3 {
+.slider h3 {
   color: #A91A1A;
   font-size: 3.8vw;
   line-height: 140px;
