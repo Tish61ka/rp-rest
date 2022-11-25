@@ -246,121 +246,123 @@ button:hover{
   border: 2px solid black;
 }
 
-@media screen and (min-width: 899px) and (max-width: 1290px){
+@media screen and (min-width: 1023px) and (max-width: 1290px){
   .div-form{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    margin: 0px auto;
     margin-top: 100px;
     max-width: 1024px;
-    height: 759px;
-    background-color: var(--main-bg-color);
-    border: 2px solid black;
+    height: 590px;
   }
-  .div-form div:nth-child(1) img{
+  .div-form div:nth-child(1) img, .div-form1 div:nth-child(1) img{
     width: 404px;
     height: 489px;
   }
-  .div-form div:nth-child(2) > div:first-child{
-    display: flex;
-    flex-direction: column;
+  .div-form div:nth-child(2) > div:first-child, .div-form1 div:nth-child(2) > div:first-child{
     width: 404px;
-    height: 489px;
+    height: 483px;
   }
-  .div-form div:nth-child(2) > div:first-child > button{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--second-bg-color);
-    border: 2px solid black;
+  .div-form div:nth-child(2) > div:first-child > button, .div-form1 div:nth-child(2) > div:first-child > button{
     width: 100%;
     height: 70px;
-    font-size: 32px;
   }
    .div-form form input[type=email],  .div-form1 form input[type=email]{
     height: 70px;
-    background-color: var(--second-bg-color);
-    outline: none;
-    border: none;
-    border-bottom: 2px solid black;
-    font-size: 32px;
-    padding-left: 50px;
   }
   .div-form form input[type=text], .div-form1 form input[type=text]{
     height: 70px;
-    background-color: var(--second-bg-color);
-    outline: none;
-    border: none;
-    border-bottom: 2px solid black;
-    font-size: 32px;
-    padding-left: 50px;
   }
   .div-form form input[type=password], .div-form1 form input[type=password]{
     height: 70px;
-    background-color: var(--second-bg-color);
-    outline: none;
-    border: none;
-    border-bottom: 2px solid black;
-    font-size: 32px;
-    padding-left: 50px;
   }
   .div-form form > div:first-child, .div-form1 form > div:first-child{
-    display: flex;
-    align-items: center;
-    height: 90px;
-    border-bottom: 2px solid;
+    height: 70px;
   }
    .div-form form div:nth-child(2), .div-form1 form div:nth-child(2){
     width: 100%;
     height: 70px;
-    background-color: var(--second-bg-color);
-    border-bottom: 2px solid black;
   }
   .div-form form > div:last-child, .div-form1 form > div:last-child{
     height: 90px;
-    border: none;
   }
   .div-form1{
-    display: none;
-    position: relative;
-    flex-direction: row;
-    margin: 0px auto;
     margin-top: 100px;
     max-width: 1024px;
-    height: 479px;
-    background-color: var(--main-bg-color);
-    border: 2px solid black;
+    height: 590px;
   }
   .div-form form > div:last-child div, .div-form1 form > div:last-child div{
-    position: absolute;
-    bottom: 0;
-    right: 0;
     width: 230px;
     height: 70px;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
   }
   .div-form form > div:last-child button[type=submit], .div-form1 form > div:last-child button[type=submit]{
     width: 230px;
     height: 55px;
-    background-color: var(--main-button-color);
-    color: var(--second-bg-color);
-    font-size: 32px;
-    border: none;
-    padding-right: 25px;
     top: 7px;
-    right: 50px;
-    z-index: 2;
   }
   .div-form form, .div-form1 form{
+    height: 452px;
+  }
+  .div-form > div:nth-child(2) p, .div-form1 > div:nth-child(2) p{
+    margin-top: 445px;
+  }
+}
+@media screen and (min-width: 630px) and (max-width: 1023px){
+  .div-form, .div-form1{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 100vw;
+    height: 100vh;
+  }
+  .div-form > div:nth-child(1), .div-form1 > div:nth-child(1){
+    display: none;
+  }
+  .div-form > div:nth-child(2), .div-form1 > div:nth-child(2){
+    justify-content: center;
+    align-items: center;
+  }
+  .div-form div:nth-child(2) > div:first-child, .div-form1 div:nth-child(2) > div:first-child{
     display: flex;
     flex-direction: column;
-    height: 452px;
-    background-color: var(--second-bg-color);
-    border: 2px solid black;
-    margin-top: -2px;
+    width: 75vw;
+    height: auto;
+  }
+    .div-form > div:nth-child(2) p, .div-form1 > div:nth-child(2) p{
+    margin-top: 585px;
+  }
+}
+@media screen  and (max-width: 629px){
+  .div-form, .div-form1{
+    display: flex;
     position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 100vw;
+    height: 100vh;
+  }
+  .div-form > div:nth-child(1), .div-form1 > div:nth-child(1){
+    display: none;
+  }
+  .div-form > div:nth-child(2), .div-form1 > div:nth-child(2){
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .div-form div:nth-child(2) > div:first-child, .div-form1 div:nth-child(2) > div:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+  }
+    .div-form > div:nth-child(2) p, .div-form1 > div:nth-child(2) p{
+    display: none;
+  }
+  .div-form > button:last-child, .div-form1 > button:last-child{
+    width: 140px;
+    height: 75px;
+    border: 2px solid black;
   }
 }

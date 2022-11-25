@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
   padding: auto 0;
 }
 .icon-header{
-  width: 38px;
+  width: 50px;
 }
 .container-header li{
     display: flex;
@@ -225,7 +225,7 @@ label {
 }
 .catalog_item{
     position: relative;
-    max-width: 33.333%;
+    width: 33.333%;
     max-height: 316px;
     padding: 20px;
 }
@@ -427,7 +427,7 @@ footer{
     }
 
     .catalog_item {
-        max-width: 50%;
+        width: 50%;
     }
 
     .catalog_item:nth-child(n+4){

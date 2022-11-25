@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
   padding: auto 0;
 }
 .icon-header{
-  width: 38px;
+  width: 50px;
 }
 .container-header li{
     display: flex;
